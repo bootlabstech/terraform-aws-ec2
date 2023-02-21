@@ -7,8 +7,11 @@ resource "aws_instance" "web-server" {
   root_block_device {
     volume_size           = var.volume_size
     delete_on_termination = false
+    encrypted = var.encrypted
   }
-
+  metadata_options {
+    http_tokens = var.http_tokens
+  }
   tags = {
     Name = var.name
   }
