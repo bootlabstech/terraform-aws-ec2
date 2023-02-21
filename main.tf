@@ -7,7 +7,7 @@ resource "aws_instance" "web-server" {
   root_block_device {
     volume_size           = var.volume_size
     delete_on_termination = false
-    encrypted = var.encrypted
+    encrypted             = var.encrypted
   }
   metadata_options {
     http_tokens = var.http_tokens
@@ -15,7 +15,7 @@ resource "aws_instance" "web-server" {
   tags = {
     Name = var.name
   }
-  
+
 }
 
 resource "tls_private_key" "example" {

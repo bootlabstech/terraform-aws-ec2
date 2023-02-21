@@ -27,13 +27,13 @@ variable "region" {
   description = "AWS Region the instance is launched in"
   type        = string
 }
- variable "encrypted" {
+variable "encrypted" {
   description = "Whether to enable volume encryption. Must be configured to perform drift detection."
-   type = bool
-   default = true
- }
- variable "http_tokens" {
-   description = "Whether or not the metadata service requires session tokens, also referred to as Instance Metadata Service Version 2 (IMDSv2). Valid values include optional or required"
-   type = string
-   default = "required"
- }
+  type        = bool
+  default     = true
+}
+variable "http_tokens" {
+  description = "Whether or not the metadata service requires session tokens, also referred to as Instance Metadata Service Version 2 (IMDSv2). Valid values include optional or required"
+  type        = string
+  default     = "required"
+}

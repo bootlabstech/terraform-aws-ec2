@@ -1,3 +1,3 @@
 output "my-ouput" {
-    value = "Hi Welcome "
+  value = "Hi Welcome "
 }
