@@ -38,6 +38,6 @@ variable "http_tokens" {
   default     = "required"
 }
 variable "associate_public_ip_address" {
-  type = bool
+  type        = bool
   description = "Whether to associate a public IP address with an instance in a VPC"
 }
