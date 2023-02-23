@@ -1,7 +1,7 @@
 resource "aws_instance" "web-server" {
   ami                         = var.ami
   instance_type               = var.instance_type
-  associate_public_ip_address = false
+  associate_public_ip_address = var.associate_public_ip_address
   key_name                    = aws_key_pair.generated_key.key_name
 
   root_block_device {
