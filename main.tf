@@ -9,9 +9,7 @@ resource "aws_instance" "web-server" {
     delete_on_termination = false
     encrypted             = var.encrypted
   }
-  metadata_options {
-    http_tokens = var.http_tokens
-  }
+ 
   tags = {
     Name = var.name
   }
