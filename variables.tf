@@ -33,8 +33,3 @@ variable "encrypted" {
   default     = true
 }
 
-variable "associate_public_ip_address" {
-  type        = bool
-  description = "Whether to associate a public IP address with an instance in a VPC"
-  default = true
-}
